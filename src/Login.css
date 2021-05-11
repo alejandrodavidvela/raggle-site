@@ -1,16 +1,24 @@
-.login {
+.container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.login {
+    max-width: 300px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+
     
 }
 
 .login__main {
     display: flex;
+    flex-direction: column;
     position: relative;
-    justify-content: space-around;
+    justify-content: center;
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 .login__button {
@@ -22,4 +30,29 @@
 
 .login__title {
     text-align: center;
+}
+
+.login__items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login__formItems {
+    margin: 20px;
+
+}
+.login__text_1 {
+    text-align: center;
+}
+
+
+.login__button {
+    display: flex;
+    align-items: center;
+
+}
+.login__text {
+    font-size: 12px;
 }

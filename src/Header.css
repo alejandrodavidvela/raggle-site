@@ -4,3 +4,27 @@
     margin: 20px;
     font-size: x-large;
 }
+
+.header__email {
+    font-size: 13px;
+}
+
+.header__email:hover {
+    cursor: pointer
+}
+
+.hide {
+    display: none;
+}
+
+.header__email:hover + .hide {
+    display: contents;
+    color: red;
+    font-size: 10px;
+}
+
+.header__profile {
+    display: flex;
+    flex-direction: column;
+
+}
