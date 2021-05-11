@@ -1,7 +1,11 @@
+import React from 'react'
 import './App.css';
-import Header from './Header'
-import RaggleItems from './RaggleItems';
-import EnterAll from './EnterAll'
+import Login from './Login'
+import SignUp from './SignUp'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Home from './screens/Home'
+import { AuthProvider } from './Auth';
+import PrivateRoute from './PrivateRoute'
 
 
 const data = [
@@ -22,14 +26,20 @@ const data = [
 
 
 function App() {
+ 
+
+
+
   return (
-    <div className="app">
-      <Header />
-      {/* raggle items and buttons to enter specific item */}
-      <RaggleItems data={data} />
-      {/* button to enter for any item  */}
-      <EnterAll />
+    <AuthProvider>
+    <Router>
+    <div>
+      <PrivateRoute exact path="/" component={Home} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/signup" component={SignUp} />
     </div>
+    </Router>
+    </AuthProvider>
   );
 }
 

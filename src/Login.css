@@ -1,0 +1,25 @@
+.login {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.login__main {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login__button {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login__title {
+    text-align: center;
+}

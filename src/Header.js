@@ -6,7 +6,7 @@ function Header() {
         <div className="header">
             {/* Logo */}
             <h3>Raggle</h3>
-            <h3>Login</h3>
+            {/* icon and name when logged in */}
         </div>
     )
 }
